@@ -19,7 +19,7 @@ SELECT * from animals WHERE name = 'Luna';
 */
 
 -- Tuesday
-
+/*
 -- Transactions 
 -- It is a bit different because I set a default value for species column
 SELECT * FROM animals;
@@ -72,4 +72,6 @@ AS "Minimum Weight" FROM animals GROUP BY species;
 SELECT species, AVG(escape_attempts) AS "Avg Escape Attempts" 
 FROM animals WHERE date_of_birth > '1990-01-01' 
 AND date_of_birth < '2000-12-31' GROUP BY species;
+*/
 
+-- Wednesday

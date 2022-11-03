@@ -20,5 +20,9 @@
 */
 
 -- Tuesday
+/*
 ALTER TABLE animals
   ADD species VARCHAR(255) DEFAULT 'unspecified';
+*/
+
+-- Wednesday
