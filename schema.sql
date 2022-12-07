@@ -51,20 +51,20 @@ ALTER TABLE animals
 */
 
 -- Thursday
-CREATE TABLE vets ( 
-    id SERIAL NOT NULL PRIMARY KEY, 
-    name varchar(255) NOT NULL, 
-    age INT NOT NULL, 
-    date_of_graduation DATE NOT NULL 
-); 
+CREATE TABLE vets (
+    id SERIAL NOT NULL PRIMARY KEY,
+    name varchar(255) NOT NULL,
+    age INT NOT NULL,
+    date_of_graduation DATE NOT NULL
+);
 
-CREATE TABLE specializations ( 
-    species_id INT NULL REFERENCES species(id) ON DELETE CASCADE, 
-    vet_id INT NULL REFERENCES vets(id) ON DELETE CASCADE 
-); 
+CREATE TABLE specializations (
+    species_id INT NULL REFERENCES species(id) ON DELETE CASCADE,
+    vet_id INT NULL REFERENCES vets(id) ON DELETE CASCADE
+);
 
-CREATE TABLE visits ( 
-    animal_id INT NULL REFERENCES animals(id) ON DELETE CASCADE, 
-    vet_id INT NULL REFERENCES vets(id) ON DELETE CASCADE, 
-    date_of_visit DATE NOT NULL 
-); 
+CREATE TABLE visits (
+    animal_id INT NULL REFERENCES animals(id) ON DELETE CASCADE,
+    vet_id INT NULL REFERENCES vets(id) ON DELETE CASCADE,
+    date_of_visit DATE NOT NULL
+);
