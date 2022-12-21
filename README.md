@@ -21,7 +21,7 @@ In this project, I use a relational database to create the data structure for a 
 - Visual Studio Code 
 
 ## Schema Diagram
-
+![Diagram](https://user-images.githubusercontent.com/104022866/208972555-f2de8ea1-3f7e-41f6-bd31-6b3a3f07d2d6.png)
 
 ## Getting Started 
 
